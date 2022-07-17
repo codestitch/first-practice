@@ -1,0 +1,18 @@
+.navigation {
+    background-color: #eeeeee;
+    width: 10rem;
+    height: 100vh;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    position: fixed;
+
+    h1 {
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

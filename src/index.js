@@ -5,6 +5,7 @@ import App from './App';
 import { About, Contact, History }  from './Practices/PracticeThreeA';
 import Favorite from './Movies/Favorite/Favorite';
 import Detail from './Movies/Detail/Detail';
+import Main from './Movies/Main/Main';
 import {
   BrowserRouter,
   Routes,
@@ -42,14 +43,18 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route
-          path="detail"
+          path=""
+          element={<Main />}
+        />
+        <Route
+          path=":detail"
           element={<Detail />}
         />
+        <Route
+          path="/favorites"
+          element={<Favorite />}
+        />
       </Route>
-      <Route
-        path="/favorite"
-        element={<Favorite />}
-      />
     </Routes>
   </BrowserRouter>,
 );
