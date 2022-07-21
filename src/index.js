@@ -47,7 +47,7 @@ root.render(
           element={<Main />}
         />
         <Route
-          path=":detail"
+          path=":filmId"
           element={<Detail />}
         />
         <Route
